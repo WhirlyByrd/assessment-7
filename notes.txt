@@ -1,0 +1,34 @@
+Timing Results:
+
+μs = microsecond
+ms = millisecond
+
+Results for the tinyArray
+insert 4.302 μs 
+append 6.086 μs
+
+Results for the smallArray
+insert 9.099 μs
+append 7.931 μs
+
+Results for the mediumArray
+insert 939.509 μs
+append 220.729 μs
+
+Results for the LargeArray
+insert 6.02348 ms
+append 382.324 μs
+
+Results for the extraLargeArray
+insert 928.295534 ms
+append 4.272888 ms
+
+The results for insert do not scale as well as the results for append. In the beginning insert runs faster but as the array increases in size the append function becomes the faster of the two.
+
+The doublerAppend function uses the .push() method.
+The doublerInsert function uses the .unshift() method.
+
+Both methods are array methods, however, the .push() method will scale better because it has a timescale of O(1). The .unshift() method has to loop through the entire array before completed which gives it a timescale of O(n).
+
+The .push() simply adds a new item to the end of the array.
+The .unshift() adds an item to the front of the array so it must also shift each previous item up one index which means it has to work through an entire array.
