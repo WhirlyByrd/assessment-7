@@ -39,7 +39,7 @@
  
 
 // the runtime is O(n^2) because there are two nested for loops
-
+// space quadratic
 
 ////////////////////////////////////////////////////////////////
 
@@ -86,7 +86,7 @@
 // console.log(hasUniqueChars('Moonday'))
 
 // This is O(n) because it cannot be greater than 256 characters from the beginning; giving it a specific max loop of 256. There are no nested for loops either.
-
+ // space linear
 
 ///////////////////////////////////////////////////////////////
 
@@ -123,6 +123,8 @@
 
 // this should be O(n^2) because we loop through the alphabet and nested inside that we run indexOf() method  which has a time complexity of O(n). If they were not nested then it would be O(n)
 
+// space quadratic
+
 
 ///////////////////////////////////////////////////////////
 
@@ -152,5 +154,6 @@ const findLongestWord = (array) => {
 console.log(findLongestWord(["hi", "hello"]))
 
 // O(n) because we are looping through an array which can change in size at anytime
+//space linear
 
 
